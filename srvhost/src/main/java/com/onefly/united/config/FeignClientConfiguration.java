@@ -1,7 +1,3 @@
-/*
- * Copyright (c) 2018. utaka and/or its affiliates.
- */
-
 package com.onefly.united.config;
 
 import feign.RequestInterceptor;
@@ -14,6 +10,9 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationDetails;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /** 在feignclient 添加token
  * @author LANXE
